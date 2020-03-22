@@ -9,7 +9,6 @@ const HeaderWrapper = styled.header`
   .logo {
     ${tw`flex justify-center text-center text-xl font-sans`};
     padding: 20px;
-    background-color: #1f2c31;
 
     a {
       ${tw`no-underline`};
