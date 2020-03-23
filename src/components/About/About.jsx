@@ -32,7 +32,7 @@ class About extends Component {
               Learn HTML/CSS in the age of social distancing
             </h2>
             <div className="full-description">
-              <p>This class is great for beginners - no previous coding experience required! If you're interested in learning how to build a website I'll guide you through the basics of HTML and CSS, give you some readily-applicable skills, and answer any questions you may have along the way.</p>
+              <p>I'm teaching a casual Intro to HTML/CSS class via Google Hangouts. It's a great class for beginners - no previous coding experience required! If you're interested in learning how to build a website I'll guide you through the basics of HTML and CSS, give you some readily-applicable skills, and answer any questions you may have along the way. I'm a Senior Software Engineer for P&G and have taught 150+ students over the years. Mostly doing this because I need people in my life during the quarantine.</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { navigate } from 'gatsby-link'
 import styled from "styled-components";
 import tw from "tailwind.macro";
 
@@ -78,8 +79,36 @@ const DetailWrapper = styled.section`
 
 `;
 
-class Details extends Component {
-  render() {
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)  }=${  encodeURIComponent(data[key])}`)
+    .join('&')
+}
+
+
+function Details() {
+
+  const [state, setState] = React.useState({})
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error))
+  }
+
     return (
       <DetailWrapper id="details">
         <div className="detail-container">
@@ -92,22 +121,36 @@ class Details extends Component {
                 <p>Classes will happen via a Google Hangout. It's free but you do have to register. Currently only accepting up to 15 students.</p>
               </div>
               <div className="form-container">
-                <form name="contact" method="POST" data-netlify="true">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p hidden>
+                    <label>
+                      Don’t fill this out: 
+                      {' '}
+                      <input name="bot-field" onChange={handleChange} />
+                    </label>
+                  </p>
                   <p>
                     <label>
-                      <input type="text" name="name" placeholder="Your Name" />
+                      <input type="text" name="name" placeholder="Your Name" onChange={handleChange} />
                     </label>   
                   </p>
                   <p>
                     <label>
-                      <input type="email" name="email" placeholder="Your Email" />
+                      <input type="email" name="email" placeholder="Your Email" onChange={handleChange} />
                     </label>
                   </p>
                   <p>
                     <label>
                       Can you attend all sessions?
                       {' '}
-                      <select name="sessions[]">
+                      <select name="sessions[]" onChange={handleChange}>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -130,7 +173,7 @@ class Details extends Component {
       </DetailWrapper>
     );
   }
-}
+
 
 export default Details;
 
