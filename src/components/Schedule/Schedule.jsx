@@ -23,11 +23,22 @@ const ScheduleWrapper = styled.section`
   }
 
   .card {
-    ${tw`w-48p md:w-1/5 bg-white text-black p-2 md:p-5 text-center font-sans bg-white relative`};
+    ${tw`w-48p md:w-1/5 p-2 md:p-5 text-center font-sans relative`};
     margin-bottom: 20px;
+    background-color: #222222;
+    color: #acbfae;
 
     .session-number {
       ${tw`font-semibold font-sans text-2xl`};
+      color: #9bd675;
+    }
+
+    .session-name {
+      ${tw`font-semibold font-sans text-lg`};
+    }
+
+    .session-date {
+      ${tw`font-sans text-base`};
     }
 
     &:hover {
@@ -44,25 +55,25 @@ class Schedule extends Component {
           <div className="full-description">
 
             <div className="card">
-              <h3 className="session-number">Class 1</h3>
+              <h3 className="session-number">1</h3>
               <p className="session-name">Intro to HTML</p>
               <p className="session-date">Tuesday, March 31st from 7:00pm to 9:00pm EST</p>
             </div>
 
             <div className="card">
-              <h3 className="session-number">Class 2</h3>
+              <h3 className="session-number">2</h3>
               <p className="session-name">Intro to CSS</p>
               <p className="session-date">Thursday, April 2nd from 7:00pm to 9:00pm EST</p>
             </div>
 
             <div className="card">
-              <h3 className="session-number">Class 3</h3>
+              <h3 className="session-number">3</h3>
               <p className="session-name">Semantic HTML</p>
               <p className="session-date">Tuesday, April 7th from 7:00pm to 9:00pm EST</p>
             </div>
 
             <div className="card">
-              <h3 className="session-number">Class 4</h3>
+              <h3 className="session-number">4</h3>
               <p className="session-name">CSS Layout</p>
               <p className="session-date">Thursday, April 9th from 7:00pm to 9:00pm EST</p>
             </div>
