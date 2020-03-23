@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { navigate } from 'gatsby-link'
 import styled from "styled-components";
 import tw from "tailwind.macro";
@@ -81,20 +81,22 @@ const DetailWrapper = styled.section`
 
 function encode(data) {
   return Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)  }=${  encodeURIComponent(data[key])}`)
+    .map(key => `${encodeURIComponent(key)  }=${  encodeURIComponent(data[key])}`)
     .join('&')
 }
 
-
-function Details() {
-
-  const [state, setState] = React.useState({})
-
-  const handleChange = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value })
+class Details extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { isValidated: false }
   }
 
-  const handleSubmit = (e) => {
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+    console.log(this.state)
+  }
+  
+  handleSubmit = e => {
     e.preventDefault()
     const form = e.target
     fetch('/', {
@@ -102,16 +104,16 @@ function Details() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...state,
+        ...this.state,
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
+      .catch(error => alert(error))
   }
 
-  console.log(state);
-
+  render() {
     return (
+
       <DetailWrapper id="details">
         <div className="detail-container">
           <div className="full-description">
@@ -123,36 +125,39 @@ function Details() {
                 <p>Classes will happen via a Google Hangout. It's free but you do have to register. Currently only accepting up to 15 students.</p>
               </div>
               <div className="form-container">
+
+                {this.state.feedbackMsg && <p>{this.state.feedbackMsg}</p>}
                 <form
                   name="contact"
                   method="POST"
+                  action="/thanks/"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
-                  onSubmit={handleSubmit}
+                  onSubmit={this.handleSubmit}
                 >
                   <input type="hidden" name="form-name" value="contact" />
                   <p hidden>
                     <label>
                       Don’t fill this out: 
                       {' '}
-                      <input name="bot-field" onChange={handleChange} />
+                      <input name="bot-field" onChange={this.handleChange} />
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input type="text" name="name" placeholder="Your Name" onChange={handleChange} />
+                      <input type="text" name="name" placeholder="Your Name" onChange={this.handleChange} />
                     </label>   
                   </p>
                   <p>
                     <label>
-                      <input type="email" name="email" placeholder="Your Email" onChange={handleChange} />
+                      <input type="email" name="email" placeholder="Your Email" onChange={this.handleChange} />
                     </label>
                   </p>
                   <p>
                     <label>
                       Can you attend all sessions?
                       {' '}
-                      <select name="sessions[]" onChange={handleChange}>
+                      <select name="sessions[]" onChange={this.handleChange}>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                       </select>
@@ -175,7 +180,5 @@ function Details() {
       </DetailWrapper>
     );
   }
-
-
+}
 export default Details;
-
