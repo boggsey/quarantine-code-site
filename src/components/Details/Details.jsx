@@ -48,6 +48,7 @@ const DetailWrapper = styled.section`
     padding: 10px 2px;
     border: 0;
     border-bottom: 2px solid #333;
+    color: #9bd675;
 
     &::placeholder {
       ${tw`text-lg text-white`};
