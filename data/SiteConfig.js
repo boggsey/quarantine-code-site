@@ -1,8 +1,9 @@
-const config = {
+const config = { 
   siteTitle: "Quarantine Code", // Site title.
   siteTitleShort: "Quarantine Code", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Quarantine Code", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  fbImg: "/logos/product-image-social-media-fb.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://www.quarantinecode.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "Teaching people code while in quarantine.", // Website description used for RSS feeds/meta description tag.

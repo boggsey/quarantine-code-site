@@ -9,6 +9,7 @@ class SEO extends Component {
     let title;
     let description;
     let image;
+    let fbImg;
     let postURL;
     if (postSEO) {
       const postMeta = postNode.frontmatter;
@@ -22,6 +23,7 @@ class SEO extends Component {
       title = config.siteTitle;
       description = config.siteDescription;
       image = config.siteLogo;
+      fbImg = config.fbImg;
     }
 
     if (
@@ -89,7 +91,7 @@ class SEO extends Component {
         {postSEO ? <meta property="og:type" content="article" /> : null}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={fbImg} />
         <meta
           property="fb:app_id"
           content={config.siteFBAppID ? config.siteFBAppID : ""}

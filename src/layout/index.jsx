@@ -2,16 +2,9 @@ import React from "react";
 import Helmet from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import Header from "../components/Header/Header";
+import SEO from "../components/SEO/SEO";
 import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
-
-function useHasMounted() {
-  const [hasMounted, setHasMounted] = React.useState(false);
-  React.useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  return hasMounted;
-}
 
 const GlobalStyle = createGlobalStyle`
 
@@ -58,6 +51,7 @@ export default class MainLayout extends React.Component {
     const { children } = this.props;
     return (
       <>
+        <SEO />
         <Header />
         <div className="layout-container">
           <Helmet>
