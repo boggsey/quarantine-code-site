@@ -51,9 +51,19 @@ const DetailWrapper = styled.section`
     border-bottom: 2px solid #333;
     color: #9bd675;
 
+
     &::placeholder {
       ${tw`text-lg text-white`};
     }
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+  }
+
+  .radio-text {
+    position: relative;
+    top: 2px;
   }
 
   select {
@@ -88,12 +98,15 @@ function encode(data) {
 class Details extends Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = { attendance: false, error: null }
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-    console.log(this.state)
+    if (e.target.type === "checkbox") {
+      this.setState({ [e.target.name]: e.target.checked ? true : false})
+    } else {
+      this.setState({ [e.target.name]: e.target.value })
+    }
   }
   
   handleSubmit = e => {
@@ -108,12 +121,11 @@ class Details extends Component {
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
+      .catch(error => this.setState({ error: 'The form cannot be submitted. Try again later or email me.'}))
   }
 
   render() {
     return (
-
       <DetailWrapper id="details">
         <div className="detail-container">
           <div className="full-description">
@@ -126,7 +138,7 @@ class Details extends Component {
               </div>
               <div className="form-container">
 
-                {this.state.feedbackMsg && <p>{this.state.feedbackMsg}</p>}
+                
                 <form
                   name="contact"
                   method="POST"
@@ -145,28 +157,25 @@ class Details extends Component {
                   </p>
                   <p>
                     <label>
-                      <input type="text" name="name" placeholder="Your Name" onChange={this.handleChange} />
+                      <input type="text" name="name" required={true} placeholder="Your Name" onChange={this.handleChange} />
                     </label>   
                   </p>
                   <p>
                     <label>
-                      <input type="email" name="email" placeholder="Your Email" onChange={this.handleChange} />
+                      <input type="email" name="email" required={true} placeholder="Your Email" onChange={this.handleChange} />
                     </label>
                   </p>
                   <p>
                     <label>
-                      Can you attend all sessions?
-                      {' '}
-                      <select name="sessions[]" onChange={this.handleChange}>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                      </select>
+                      <input type="checkbox" required={true} name="attendance" value={this.state.attendance} onChange={this.handleChange} />
+                      <span className="radio-text">I can attend all sessions</span>
                     </label>
                   </p>
                   <p>
                     <button type="submit">Register</button>
                   </p>
                 </form>
+                {this.state.error && <p>{this.state.error}</p>}
               </div>
             </div>
           
