@@ -5,6 +5,14 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 
+function useHasMounted() {
+  const [hasMounted, setHasMounted] = React.useState(false);
+  React.useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  return hasMounted;
+}
+
 const GlobalStyle = createGlobalStyle`
 
   html {

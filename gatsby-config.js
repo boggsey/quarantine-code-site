@@ -98,6 +98,7 @@ module.exports = {
         ]
       }
     },
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-netlify-cms",
