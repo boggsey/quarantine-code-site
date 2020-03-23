@@ -4,7 +4,7 @@ import tw from "tailwind.macro";
 
 const FooterWrapper = styled.div`
   ${tw`flex flex-col items-center justify-center font-sans text-sm py-5`};
-  background: #050505;
+  background: #000;
   border-top: 1px solid black;
 
   a {

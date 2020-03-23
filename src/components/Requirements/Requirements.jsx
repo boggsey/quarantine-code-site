@@ -5,7 +5,7 @@ import tw from "tailwind.macro";
 
 const RequirementsWrapper = styled.section`
   ${tw`w-full justify-between items-center flex flex-col text-center py-32`};
-  background-color: black;
+  background-color: #020202;
 
   .container {
     ${tw`w-5/6 md:w-2/5`};

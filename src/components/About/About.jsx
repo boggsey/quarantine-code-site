@@ -7,6 +7,7 @@ const AboutWrapper = styled.section`
   ${tw`w-full justify-between items-center flex flex-row min-h-screen bg-cover`};
   background: url("https://res.cloudinary.com/ericboggs/image/upload/v1584909755/mask_qa3ylr.jpg");
   background-size: cover;
+  background-position: center;
 
   .container {
     ${tw`w-5/6 md:w-2/5`};
