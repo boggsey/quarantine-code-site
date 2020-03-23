@@ -8,7 +8,7 @@ const RequirementsWrapper = styled.section`
   background-color: #020202;
 
   .container {
-    ${tw`w-5/6 md:w-2/5`};
+    ${tw`w-5/6 md:w-2/5 text-center`};
   }
 
   h2 {
@@ -29,6 +29,11 @@ const RequirementsWrapper = styled.section`
     color: #9bd675;
     text-decoration: none;
   }
+
+  .line {
+    max-width: 400px;
+    width: 80%;
+  }
 `;
 
 class Requirements extends Component {
@@ -41,6 +46,7 @@ class Requirements extends Component {
               Requirements
             </h2>
             <div>
+              <img className="line" src="https://res.cloudinary.com/ericboggs/image/upload/v1584932032/line_fc5vjt.png" />
               <ul>
                 <li>Laptop</li>
                 <li>

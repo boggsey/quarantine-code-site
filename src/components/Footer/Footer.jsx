@@ -16,14 +16,17 @@ const FooterWrapper = styled.div`
     }
   }
 
+  img {
+    width: 100px;
+  }
+
 `;
 
 class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        Brought to you by ya boy
-        <a href="https://etboggs.com">Eric Boggs</a>
+        <a href="https://etboggs.com"><img src="https://res.cloudinary.com/ericboggs/image/upload/v1584931699/eric_eausfx.png" /></a>
       </FooterWrapper>
     );
   }
