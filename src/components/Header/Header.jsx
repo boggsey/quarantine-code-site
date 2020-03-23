@@ -14,6 +14,10 @@ const HeaderWrapper = styled.header`
       ${tw`no-underline`};
       color: #9bd675;
     }
+
+    img {
+      width: 200px;
+    }
   }
 `;
 
@@ -28,7 +32,7 @@ class Header extends Component {
               this.myLink = el;
             }}
           >
-            Quarantine Code
+            <img src="https://res.cloudinary.com/ericboggs/image/upload/v1584933407/logo-drop_gk9knd.png" />
           </Link>
         </div>
       </HeaderWrapper>
