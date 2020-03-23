@@ -4,8 +4,10 @@ import tw from "tailwind.macro";
 
 
 const ScheduleWrapper = styled.section`
-  ${tw`w-full justify-between items-center flex flex-row px-2 py-8 md:p-32`};
+  ${tw`w-full justify-center items-center flex flex-row px-2 py-8 md:p-32`};
   background-color: #9bd675;
+  background-image: url(https://res.cloudinary.com/ericboggs/image/upload/v1584926618/tp_xrzjkl.png);
+  background-position: top center;
 
   .schedule-container {
     ${tw`w-full md:w-3/4`};

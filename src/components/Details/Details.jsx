@@ -64,7 +64,6 @@ const DetailWrapper = styled.section`
     border: 2px solid #9bd675;
     padding: 5px 20px;
     cursor: pointer;
-    border-radius: 20px;
 
     &:hover {
       background: #1f2c31;

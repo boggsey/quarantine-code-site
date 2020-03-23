@@ -19,18 +19,6 @@ module.exports = {
       normal: ['"Avenir LT W02_45 Book1475510"'],
       heavy: ['"Avenir LT W02_85 Heavy1475546"']
     },
-    margin: {
-      auto: "auto",
-      px: "1px",
-      "0": "0",
-      "1": "0.25rem",
-      "2": "0.5rem",
-      "3": "0.75rem",
-      "4": "1rem",
-      "6": "1.5rem",
-      "8": "2rem",
-      "80p": "80px"
-    },
     width: {
       auto: "auto",
       px: "1px",
