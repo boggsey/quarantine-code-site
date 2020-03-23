@@ -3,7 +3,8 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 
 const DetailWrapper = styled.section`
-  ${tw`w-full flex justify-end flex-row bg-black`};
+  ${tw`w-full flex justify-center md:justify-end flex-row bg-black`};
+  overflow: hidden;
 
   .detail-container {
     ${tw`w-5/6 md:w-4/5 flex justify-between flex-col md:flex-row py-8`};
@@ -70,6 +71,7 @@ const DetailWrapper = styled.section`
       color: #9bd675;
     }
   }
+
 `;
 
 class Details extends Component {
@@ -114,7 +116,7 @@ class Details extends Component {
           
           </div>
 
-          <div>
+          <div className="img-container">
             <img src="https://res.cloudinary.com/ericboggs/image/upload/v1584921909/side-code_mjwhpx.png" />
           </div>
           

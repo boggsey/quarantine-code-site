@@ -59,6 +59,7 @@ module.exports = {
       "1/6": "16.66667%",
       "5/6": "83.33333%",
       "30p": "30%",
+      "48p": "48%",
       "90p": "90%",
       "95p": "95%",
       full: "100%",
@@ -94,7 +95,7 @@ module.exports = {
       halfScreen: "50vh",
       screen: "100vh"
     },
-    textSizes: {
+    sizes: {
       xs: ".75rem", // 12px
       sm: ".875rem", // 14px
       base: "1rem", // 16px
