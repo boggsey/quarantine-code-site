@@ -109,6 +109,8 @@ function Details() {
       .catch((error) => alert(error))
   }
 
+  console.log(state);
+
     return (
       <DetailWrapper id="details">
         <div className="detail-container">

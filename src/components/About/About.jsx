@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 
 const AboutWrapper = styled.section`
-  ${tw`w-full justify-between items-center flex flex-row min-h-screen bg-cover`};
+  ${tw`w-full justify-between items-center flex flex-row min-h-screen bg-cover pt-32 md:pt-0`};
   background: url("https://res.cloudinary.com/ericboggs/image/upload/v1584909755/mask_qa3ylr.jpg");
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@ const AboutWrapper = styled.section`
   }
 
   h2 {
-    ${tw`text-center md:text-left uppercase leading-tight font-sans font-bold mb-0 mt-0 text-5xl text-white`};
+    ${tw`text-center md:text-left uppercase leading-tight font-sans font-bold mb-0 mt-0 text-3xl md:text-5xl text-white`};
     color: #9bd675;
   }
 
