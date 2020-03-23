@@ -26,7 +26,14 @@ class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <a href="https://etboggs.com"><img src="https://res.cloudinary.com/ericboggs/image/upload/v1584931699/eric_eausfx.png" /></a>
+        <p><a href="https://etboggs.com"><img src="https://res.cloudinary.com/ericboggs/image/upload/v1584931699/eric_eausfx.png" /></a></p>
+        <p>
+          <a href="https://www.linkedin.com/in/etboggs/">linkedin</a>
+          {' '}
+          |
+          {' '}
+          <a href="https://etboggs.com">etboggs.com</a>
+        </p>
       </FooterWrapper>
     );
   }
