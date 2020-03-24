@@ -28,6 +28,10 @@ const DetailWrapper = styled.section`
     ${tw`w-full md:w-3/4`}
   }
 
+  .closed {
+    font-weight: bold;
+  }
+
   ul {
     margin-top: 0;
   }
@@ -138,8 +142,8 @@ class Details extends Component {
               </div>
               <div className="form-container">
 
-                
-                <form
+                <p class="closed">Sorry! Registration is currently closed!</p>
+                {/* <form
                   name="contact"
                   method="POST"
                   action="/thanks/"
@@ -175,7 +179,7 @@ class Details extends Component {
                     <button type="submit">Register</button>
                   </p>
                 </form>
-                {this.state.error && <p>{this.state.error}</p>}
+                {this.state.error && <p>{this.state.error}</p>} */}
               </div>
             </div>
           
