@@ -138,12 +138,11 @@ class Details extends Component {
                 Registration
               </h2>
               <div className="description-container">
-                <p>Classes will happen via a Google Hangout. It's free but you do have to register. Currently only accepting up to 15 students.</p>
+                <p>Classes are currently full. If enough people are interested, I will hold another class within the next few weeks! Register your interest below</p>
               </div>
               <div className="form-container">
 
-                <p class="closed">Sorry! Registration is currently closed!</p>
-                {/* <form
+                <form
                   name="contact"
                   method="POST"
                   action="/thanks/"
@@ -176,10 +175,10 @@ class Details extends Component {
                     </label>
                   </p>
                   <p>
-                    <button type="submit">Register</button>
+                    <button type="submit">Register my interest</button>
                   </p>
                 </form>
-                {this.state.error && <p>{this.state.error}</p>} */}
+                {this.state.error && <p>{this.state.error}</p>}
               </div>
             </div>
           
