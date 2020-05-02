@@ -175,7 +175,7 @@ class Details extends Component {
                     </label>
                   </p>
                   <p>
-                    <button type="submit">Register my interest</button>
+                    <button type="submit">Register now</button>
                   </p>
                 </form>
                 {this.state.error && <p>{this.state.error}</p>}
