@@ -58,7 +58,6 @@ class Schedule extends Component {
               <h3 className="session-number">1</h3>
               <p className="session-name">Intro to HTML</p>
               <p className="session-date">Tuesday, May 12th from 7:00pm to 9:00pm EST</p>
-              <a href="https://boggsey.github.io/quarantine-code-slides/class1.html">Go to Slides</a>
             </div>
 
             <div className="card">
