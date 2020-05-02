@@ -57,25 +57,26 @@ class Schedule extends Component {
             <div className="card">
               <h3 className="session-number">1</h3>
               <p className="session-name">Intro to HTML</p>
-              <p className="session-date">Tuesday, March 31st from 7:00pm to 9:00pm EST</p>
+              <p className="session-date">Tuesday, May 12th from 7:00pm to 9:00pm EST</p>
+              <a href="https://boggsey.github.io/quarantine-code-slides/class1.html">Go to Slides</a>
             </div>
 
             <div className="card">
               <h3 className="session-number">2</h3>
               <p className="session-name">Intro to CSS</p>
-              <p className="session-date">Thursday, April 2nd from 7:00pm to 9:00pm EST</p>
+              <p className="session-date">Thursday, May 14th from 7:00pm to 9:00pm EST</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">3</h3>
               <p className="session-name">Semantic HTML</p>
-              <p className="session-date">Tuesday, April 7th from 7:00pm to 9:00pm EST</p>
+              <p className="session-date">Tuesday, May 19th from 7:00pm to 9:00pm EST</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">4</h3>
               <p className="session-name">CSS Layout</p>
-              <p className="session-date">Thursday, April 9th from 7:00pm to 9:00pm EST</p>
+              <p className="session-date">Thursday, May 21st from 7:00pm to 9:00pm EST</p>
             </div>
           </div>
         </div>
