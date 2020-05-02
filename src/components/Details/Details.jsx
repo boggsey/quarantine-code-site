@@ -138,19 +138,19 @@ class Details extends Component {
                 Registration
               </h2>
               <div className="description-container">
-                <p>Classes are currently full. If enough people are interested, I will hold another class within the next few weeks! Register your interest below</p>
+                <p>Classes will happen via Zoom. It's free but you do have to register.</p>
               </div>
               <div className="form-container">
 
                 <form
-                  name="contact"
+                  name="class2"
                   method="POST"
                   action="/thanks/"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                   onSubmit={this.handleSubmit}
                 >
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="form-name" value="class2" />
                   <p hidden>
                     <label>
                       Don’t fill this out: 
