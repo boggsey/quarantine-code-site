@@ -14,8 +14,8 @@ class IndexPage extends Component {
         <div className="index-container">
           <Helmet title={`${config.siteTitle}`} />
           <About />
-          <Details />
           <Schedule />
+          <Details />
           <Requirements />
         </div>
       </Layout>

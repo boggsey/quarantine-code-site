@@ -35,8 +35,8 @@ class ThankYou extends Component {
           <div className="full-description">
             <img src="https://res.cloudinary.com/ericboggs/image/upload/v1584939781/sick_qqxsxe.png" />
             <div>
-              <p>I'll be in touch soon!</p>
-              <p>You can find the details below.</p>
+              <p>I'll send a calendar invite to your email soon!</p>
+              <p>You can find the discussion topics below.</p>
             </div>
           </div>
         </div>

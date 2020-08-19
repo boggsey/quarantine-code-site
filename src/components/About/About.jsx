@@ -29,10 +29,10 @@ class About extends Component {
         <div className="container">
           <div className="full-description">
             <h2>
-              Learn HTML/CSS in the age of social distancing
+              Learn code in the age of social distancing
             </h2>
             <div className="full-description">
-              <p>I'm teaching a casual Intro to HTML/CSS class via Google Hangouts. It's a great class for beginners - no previous coding experience required! If you're interested in learning how to build a website I'll guide you through the basics of HTML and CSS, give you some readily-applicable skills, and answer any questions you may have along the way. I'm a Senior Software Engineer for P&G and have taught 150+ students over the years. Mostly doing this because I need people in my life during the quarantine.</p>
+              <p>Are you considering switching careers into web development? Maybe going to a coding bootcamp? If so, join me (a Senior Software Engineer) for a free, casual Zoom chat to discuss what it takes to become a developer and what life after bootcamp might look like. Check below to sign up and read more about our discussion topics.</p>
             </div>
           </div>
         </div>

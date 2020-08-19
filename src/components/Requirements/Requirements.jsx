@@ -48,12 +48,10 @@ class Requirements extends Component {
             <div>
               <img className="line" src="https://res.cloudinary.com/ericboggs/image/upload/v1584932032/line_fc5vjt.png" />
               <ul>
-                <li>Laptop</li>
-                <li>
-                  <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-                </li>
                 <li>Good attitude</li>
-                <li><a href="https://www.google.com/chrome/">Google Chrome</a></li>
+                <li>
+                  <a href="https://zoom.us/download">Zoom Client for Meetings</a>
+                </li>
                 <li>Maybe a beer</li>
               </ul>
             </div>

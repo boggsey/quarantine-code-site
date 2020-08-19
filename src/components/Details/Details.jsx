@@ -48,6 +48,10 @@ const DetailWrapper = styled.section`
     ${tw`text-white text-md font-sans text-lg`};
   }
 
+  .highlight {
+    color: #9bd675;
+  }
+
   input {
     ${tw`w-full text-lg bg-transparent`};
     padding: 10px 2px;
@@ -138,12 +142,12 @@ class Details extends Component {
                 Registration
               </h2>
               <div className="description-container">
-                <p>Classes will happen via Zoom. It's free but you do have to register.</p>
+                <p>This chat will happen via Zoom on <span class="highlight">Thursday, August 27th</span> from <span class="highlight">7pm EST to 9pm EST</span>. It's free but you do have to register. This is a safe space for people to learn about getting in to development and there are limited seats. If you're a seasoned developer or represent a boot camp, don't sign up for this one.</p>
               </div>
               <div className="form-container">
 
                 <form
-                  name="class2"
+                  name="becoming-developer"
                   method="POST"
                   action="/thanks/"
                   data-netlify="true"
@@ -166,12 +170,6 @@ class Details extends Component {
                   <p>
                     <label>
                       <input type="email" name="email" required={true} placeholder="Your Email" onChange={this.handleChange} />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" required={true} name="attendance" value={this.state.attendance} onChange={this.handleChange} />
-                      <span className="radio-text">I can attend all sessions</span>
                     </label>
                   </p>
                   <p>

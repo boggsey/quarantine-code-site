@@ -14,8 +14,8 @@ const ScheduleWrapper = styled.section`
   }
 
   h2 {
-    ${tw`text-center md:text-left uppercase leading-tight font-sans font-bold mb-0 mt-0 text-2xl text-white`};
-    color: #9bd675;
+    ${tw`text-center uppercase leading-tight font-sans font-bold pb-2 mt-0 text-3xl`};
+    color: #000;
   }
 
   .full-description {
@@ -23,8 +23,9 @@ const ScheduleWrapper = styled.section`
   }
 
   .card {
-    ${tw`w-48p md:w-1/5 p-2 md:p-5 text-center font-sans relative`};
+    ${tw`w-48p  p-2 md:p-5 text-center font-sans relative`};
     margin-bottom: 20px;
+    width: 24%;
     background-color: #222222;
     color: #acbfae;
 
@@ -52,30 +53,48 @@ class Schedule extends Component {
     return (
       <ScheduleWrapper id="schedule">
         <div className="schedule-container">
+          <h2>Discussion Topics</h2>
+          
           <div className="full-description">
 
             <div className="card">
               <h3 className="session-number">1</h3>
-              <p className="session-name">Intro to HTML</p>
-              <p className="session-date">Tuesday, May 12th from 7:00pm to 9:00pm EST</p>
+              <p className="session-name">What does it mean to be a web developer?</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">2</h3>
-              <p className="session-name">Intro to CSS</p>
-              <p className="session-date">Thursday, May 14th from 7:00pm to 9:00pm EST</p>
+              <p className="session-name">Common misconceptions</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">3</h3>
-              <p className="session-name">Semantic HTML</p>
-              <p className="session-date">Tuesday, May 19th from 7:00pm to 9:00pm EST</p>
+              <p className="session-name">What type of person do I need to be?</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">4</h3>
-              <p className="session-name">CSS Layout</p>
-              <p className="session-date">Thursday, May 21st from 7:00pm to 9:00pm EST</p>
+              <p className="session-name">How much time do I need to spend learning?</p>
+            </div>
+
+            <div className="card">
+              <h3 className="session-number">5</h3>
+              <p className="session-name">What should I learn?</p>
+            </div>
+
+            <div className="card">
+              <h3 className="session-number">6</h3>
+              <p className="session-name">What type of work can I get?</p>
+            </div>
+
+            <div className="card">
+              <h3 className="session-number">7</h3>
+              <p className="session-name">What would my salary look like?</p>
+            </div>
+
+            <div className="card">
+              <h3 className="session-number">8</h3>
+              <p className="session-name">Common Paths</p>
             </div>
           </div>
         </div>
