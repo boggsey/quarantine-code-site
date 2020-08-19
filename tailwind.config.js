@@ -52,7 +52,8 @@ module.exports = {
       "95p": "95%",
       full: "100%",
       screen: "100vw",
-      "45px": "45px" 
+      "45px": "45px", 
+      "24p": "24%"
     },
     height: {
       auto: "auto",

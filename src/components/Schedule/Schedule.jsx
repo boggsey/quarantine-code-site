@@ -23,9 +23,8 @@ const ScheduleWrapper = styled.section`
   }
 
   .card {
-    ${tw`w-48p  p-2 md:p-5 text-center font-sans relative`};
+    ${tw`w-48p p-2 md:w-24p md:p-5 text-center font-sans relative`};
     margin-bottom: 20px;
-    width: 24%;
     background-color: #222222;
     color: #acbfae;
 
