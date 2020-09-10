@@ -58,43 +58,24 @@ class Schedule extends Component {
 
             <div className="card">
               <h3 className="session-number">1</h3>
-              <p className="session-name">What does it mean to be a web developer?</p>
+              <p className="session-name">Getting started in development</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">2</h3>
-              <p className="session-name">Common misconceptions</p>
+              <p className="session-name">Deciding on a bootcamp</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">3</h3>
-              <p className="session-name">What type of person do I need to be?</p>
+              <p className="session-name">Attending a bootcamp</p>
             </div>
 
             <div className="card">
               <h3 className="session-number">4</h3>
-              <p className="session-name">How much time do I need to spend learning?</p>
+              <p className="session-name">Careers after bootcamp</p>
             </div>
 
-            <div className="card">
-              <h3 className="session-number">5</h3>
-              <p className="session-name">What should I learn?</p>
-            </div>
-
-            <div className="card">
-              <h3 className="session-number">6</h3>
-              <p className="session-name">What type of work can I get?</p>
-            </div>
-
-            <div className="card">
-              <h3 className="session-number">7</h3>
-              <p className="session-name">What would my salary look like?</p>
-            </div>
-
-            <div className="card">
-              <h3 className="session-number">8</h3>
-              <p className="session-name">Common Paths</p>
-            </div>
           </div>
         </div>
       </ScheduleWrapper>

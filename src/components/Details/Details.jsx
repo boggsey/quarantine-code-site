@@ -142,12 +142,12 @@ class Details extends Component {
                 Registration
               </h2>
               <div className="description-container">
-                <p>This chat will happen via Zoom on <span class="highlight">Thursday, August 27th</span> from <span class="highlight">7pm EST to 9pm EST</span>. It's free but you do have to register. This is a safe space for people to learn about getting in to development and there are limited seats.</p>
+                <p>This chat will happen via Zoom on <span class="highlight">Thursday, September 17th</span> from <span class="highlight">7pm EST to 9pm EST</span>. It's free but you do have to register. This is a safe space for people to learn about getting in to development and there are limited seats.</p>
               </div>
               <div className="form-container">
 
                 <form
-                  name="becoming-developer"
+                  name="bootcamp-panel"
                   method="POST"
                   action="/thanks/"
                   data-netlify="true"

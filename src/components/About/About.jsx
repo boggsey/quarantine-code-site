@@ -32,7 +32,7 @@ class About extends Component {
               Learn code in the age of social distancing
             </h2>
             <div className="full-description">
-              <p>Are you considering switching careers into web development? Maybe going to a coding bootcamp? If so, join me (a Senior Software Engineer) for a free, casual Zoom chat to discuss what it takes to become a developer and what life after bootcamp might look like. Check below to sign up and read more about our discussion topics.</p>
+              <p>Are you considering switching careers into web development? Maybe going to a coding bootcamp? If so, join me (a Senior Software Engineer) and 4 developers who successfully graduated from a coding bootcamp for a free, casual Zoom chat to discuss what it takes to attend a bootcamp, become a developer and what life after bootcamp might look like. Check below to sign up and read more about our discussion topics.</p>
             </div>
           </div>
         </div>
